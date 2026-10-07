@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="toDo">
+            <h1>My To Do List</h1>
+            <div class="row">
+                <input type="text" id="inputTask" placeholder="Tambahkan to do list">
+                <button id="tombol">tambah</button>
+            </div>
+           <div class="jumlah-tugas">
+    <div class="kotak-jumlah">
+        <button id="totalBelumSelesai">0</button>
+        <p>Belum Selesai</p>
+    </div>
+
+    <div class="kotak-jumlah">
+        <button id="totalSelesai">0</button>
+        <p>Selesai</p>
+    </div>
+
+    <div class="kotak-jumlah">
+        <button id="totalTotalTugas">0</button>
+        <p>Total Tugas</p>
+    </div>
+</div>
+            <ul id="listContainer">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

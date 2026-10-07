@@ -1,0 +1,147 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #ff2873, #ffb3d6);
+        padding: 10px;
+    }
+    
+    .toDo {
+        width: 100%;
+        max-width: 500px;
+        background-color: #ffea8a;
+        margin: 100px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    }
+    
+    .toDo h1 {
+        justify-content: center;
+        margin-bottom: 30px;
+        font-size: 30px;
+        color: #980033;
+        display: flex;
+        align-items: center;
+    }
+    
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffabab;
+        border-radius: 30px;
+        padding-left: 10px;
+        margin-bottom: 25px;
+    }
+    
+    input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 10px;
+        background: transparent;
+        font-size: 16px;
+    }
+    
+    #tombol {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        background: #980033;
+        color: #ffea8a;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 40px;
+    }
+    
+    #tombol:hover {
+        background: #70fffa;
+        color: #980033;
+    }
+    
+    #listContainer li {
+        list-style: none;
+        padding: 12px 50px 10px 50px;
+        font-size: 17px;
+        border-bottom: 1px solid #70fffa;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    #listContainer li::before {
+        content: "\2610";
+        position: absolute;
+        font-size: 22px;
+        left: 10px;
+        bottom: 6px;
+    }
+    
+    #listContainer li.done {
+        color: #888;
+        text-decoration: line-through;
+    }
+    
+    #listContainer li.done::before {
+        content: "\2611";
+        color: #27ae60;
+    }
+    
+    #listContainer li span {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        color: #888;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    
+    #listContainer li span:hover {
+        background: #ccc;
+        color: #fff;
+
+    }
+
+.jumlah-tugas {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.kotak-jumlah {
+    flex: 1;
+    background-color: #ffabab;
+    padding: 12px 8px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.kotak-jumlah button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #980033;
+    cursor: default;
+    display: block;
+    width: 100%;
+}
+
+.kotak-jumlah p {
+    font-size: 11px;
+    font-weight: bold;
+    color: #980033;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
